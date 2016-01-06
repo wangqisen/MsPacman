@@ -1,18 +1,18 @@
 package pacman.controllers.examples.wqs;
 
 import pacman.game.Constants;
-import pacman.game.Constants.*;
+import pacman.game.Constants.GHOST;
 import pacman.game.Game;
 
 
 /**
  * Created by wangqisen on 2016/1/4.
  */
-public class RetreatState implements MachineState{
+public class RetreatState implements MachineState {
 
     @Override
     public MachineStateEnum next(Game game, Constants.GHOST ghost) {
-        if(GhostsUtil.closeToMsPacman(ghost, game))	//retreat from Ms Pac-Man if she is near
+        if (GhostsUtil.closeToMsPacman(ghost, game))    //retreat from Ms Pac-Man if she is near
             return MachineStateEnum.RETREAT;
         else
             return MachineStateEnum.NEGATIVE_RANDOM;

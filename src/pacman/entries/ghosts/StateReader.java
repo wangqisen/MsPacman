@@ -1,22 +1,20 @@
 package pacman.entries.ghosts;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class StateReader {
 
-    private String path;
     String[][] states;
+    private String path;
 
     public StateReader(String filePath) {
         path = filePath;
     }
 
     //opens the stateMachine file and stores the states in a 2D array which is returned
-    public String[][] openFile() throws IOException{
+    public String[][] openFile() throws IOException {
         FileReader fr = new FileReader(path);
         BufferedReader br = new BufferedReader(fr);
 
@@ -26,11 +24,11 @@ public class StateReader {
         states = new String[numberOfLines][4];//2d array to store each state piece separately
 
         int i;
-        for (i=0; i < numberOfLines; i++) {//loop through each line and split it at each ","
-            textData[ i ] = br.readLine();
+        for (i = 0; i < numberOfLines; i++) {//loop through each line and split it at each ","
+            textData[i] = br.readLine();
 
-            for (int j = 0; j < 4;){
-                for (String statePiece: textData[i].split(",")){
+            for (int j = 0; j < 4; ) {
+                for (String statePiece : textData[i].split(",")) {
                     states[i][j] = statePiece;
                     j++;
                 }
@@ -48,7 +46,7 @@ public class StateReader {
         String line;
         int noOfLines = 0;
 
-        while ( ( line = br.readLine( ) ) != null ) {
+        while ((line = br.readLine()) != null) {
             noOfLines++;
         }
         br.close();
@@ -56,14 +54,14 @@ public class StateReader {
     }
 
     //uses passed in values to find what state to move to next
-    String getNextState(String[][] stateTable, String currState, String currEvent ) throws IOException{
+    String getNextState(String[][] stateTable, String currState, String currEvent) throws IOException {
         String newState = "";
         int numberOfLines = readlines();
 
         //go through each line and each element
         for (int i = 0; i < numberOfLines; i++) {
             //System.out.println("INFO IS: " + stateTable[i][0] + "_____" + currState);
-            if (stateTable[i][0].equals(currState)  && stateTable[i][1].equals(currEvent)) {
+            if (stateTable[i][0].equals(currState) && stateTable[i][1].equals(currEvent)) {
                 newState = stateTable[i][3];
                 break;
             }
