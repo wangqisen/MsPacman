@@ -52,8 +52,8 @@
       <file leaf-file-name="MyGhosts.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pacman/controllers/examples/MyGhosts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60215056" vertical-offset="0" max-vertical-offset="966">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6236559" vertical-offset="240" max-vertical-offset="1113">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +169,8 @@
         <option value="$PROJECT_DIR$/src/pacman/controllers/examples/wqs/NegativeState.java" />
         <option value="$PROJECT_DIR$/src/pacman/controllers/examples/wqs/AggresiveRandomState.java" />
         <option value="$PROJECT_DIR$/src/pacman/controllers/examples/wqs/GhostsUtil.java" />
-        <option value="$PROJECT_DIR$/src/pacman/controllers/examples/MyGhosts.java" />
         <option value="$PROJECT_DIR$/src/pacman/Executor.java" />
+        <option value="$PROJECT_DIR$/src/pacman/controllers/examples/MyGhosts.java" />
       </list>
     </option>
   </component>
@@ -721,12 +721,12 @@
       <workItem from="1450938282573" duration="5600000" />
       <workItem from="1451372947481" duration="14735000" />
       <workItem from="1451551304233" duration="30119000" />
-      <workItem from="1451887591541" duration="27245000" />
+      <workItem from="1451887591541" duration="27698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77699000" />
+    <option name="totallyTimeSpent" value="78152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1135,8 +1135,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pacman/controllers/examples/MyGhosts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60215056" vertical-offset="0" max-vertical-offset="966">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6236559" vertical-offset="240" max-vertical-offset="1113">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

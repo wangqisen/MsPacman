@@ -14,6 +14,9 @@ import java.util.EnumMap;
  */
 public class MyGhosts extends Controller<EnumMap<Constants.GHOST, Constants.MOVE>> {
 
+    /*
+    * My ghosts inition.All four ghosts are at aggresive station at first.
+    */
     public MyGhosts() {
         Machine.ghostsState.put(GHOST.BLINKY, Machine.aggresiveState);
         Machine.ghostsState.put(GHOST.INKY, Machine.aggresiveState);
@@ -21,6 +24,10 @@ public class MyGhosts extends Controller<EnumMap<Constants.GHOST, Constants.MOVE
         Machine.ghostsState.put(GHOST.SUE, Machine.aggresiveState);
     }
 
+
+    /*
+    *get next moves by state machine.See Machine for details.
+    */
     @Override
     public EnumMap<Constants.GHOST, Constants.MOVE> getMove(Game game, long timeDue) {
         Machine.myMoves.clear();
